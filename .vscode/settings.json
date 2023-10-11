@@ -12,6 +12,8 @@
         "_default_fcntl.h": "c",
         "loader.h": "c",
         "klib.h": "c",
-        "list.h": "c"
+        "list.h": "c",
+        "bitmap.h": "c",
+        "log.h": "c"
     },
 }

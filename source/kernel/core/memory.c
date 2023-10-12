@@ -97,7 +97,7 @@ pte_t * find_pte (pde_t * page_dir, uint32_t vaddr, int alloc) {
             return (pte_t *)0;
         }
 
-        // 分配一个物理页表
+        // 分配一个物理页表，4kb一个表项，4MB一整个表
         uint32_t pg_paddr = addr_alloc_page(&paddr_alloc, 1);
         if (pg_paddr == 0) {
             return (pte_t *)0;

@@ -116,6 +116,8 @@ exception_handler machine_check, 18, 0
 exception_handler smd_exception, 19, 0
 exception_handler virtual_exception, 20, 0
 
+exception_handler syscall, 0x80, 0
+
 // 硬件中断
 exception_handler timer, 0x20, 0
 
